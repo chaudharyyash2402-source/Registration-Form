@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Registration Form</h1>
+    <form class="p-4 border rounded shadow bg-white">
+      <fieldset>
+        <legend class="fw-bold mb-3">Personal Details</legend>
+
+        <div class="mb-3">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="Name" placeholder="Enter Your Name" autofocus required>
+        </div>
+
+        <div class="mb-3">
+          <label for="Country" class="form-label">Country</label>
+          <input type="text" class="form-control" id="Country" placeholder="Enter your Country" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="Message" class="form-label">Message</label>
+          <textarea class="form-control" id="Message" rows="4">Hi there!</textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Gender</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="Hobbies" class="form-label">Hobbies</label>
+          <select class="form-select" id="Hobbies">
+            <option value="select">Select</option>
+            <option value="reading">Reading</option>
+            <option value="poetry">Poetry</option>
+            <option value="sports">Sports</option>
+            <option value="cycling">Cycling</option>
+            <option value="swimming">Swimming</option>
+          </select>
+        </div>
+
+        <div class="form-check form-switch mb-3">
+          <input class="form-check-input" type="checkbox" id="notify" checked>
+          <label class="form-check-label" for="notify">Notify</label>
+        </div>
+
+      </fieldset>
+      
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-4">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
+
